@@ -1,0 +1,1762 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20194.20.0125.0835                               -->
+<workbook original-version='18.1' source-build='2019.4.3 (20194.20.0125.0835)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <SheetIdentifierTracking ignorable='true' predowngraded='true' />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='示例数据 (人工坐席接听数据)' inline='true' name='federated.1nvoonx0qmnkn011ytm971bl4z2m' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='人工坐席接听数据' name='excel-direct.1enzq8m13pubem140i8co1odmw23'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='D:/Long/Documents/Tableau/Tableau 作业使用数据源/人工坐席接听数据.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.1enzq8m13pubem140i8co1odmw23' name='示例数据' table='[示例数据$]' type='table'>
+          <columns gridOrigin='A1:O10001:no:A1:O10001:0' header='yes' outcome='2'>
+            <column datatype='string' name='中心' ordinal='0' />
+            <column datatype='string' name='部' ordinal='1' />
+            <column datatype='string' name='组' ordinal='2' />
+            <column datatype='string' name='班' ordinal='3' />
+            <column datatype='date' name='日期' ordinal='4' />
+            <column datatype='string' name='姓名' ordinal='5' />
+            <column datatype='string' name='工号' ordinal='6' />
+            <column datatype='integer' name='人工服务接听量' ordinal='7' />
+            <column datatype='integer' name='三声铃响接听量' ordinal='8' />
+            <column datatype='integer' name='呼入通话时长(秒)' ordinal='9' />
+            <column datatype='real' name='平均呼入通话时长(秒)' ordinal='10' />
+            <column datatype='integer' name='呼入案头总时长(秒)' ordinal='11' />
+            <column datatype='real' name='平均呼入案头时长（秒）' ordinal='12' />
+            <column datatype='integer' name='服务评价推送成功数' ordinal='13' />
+            <column datatype='real' name='服务评价满意率' ordinal='14' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>中心</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[中心]</local-name>
+            <parent-name>[示例数据]</parent-name>
+            <remote-alias>中心</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LZH_RCN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>部</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[部]</local-name>
+            <parent-name>[示例数据]</parent-name>
+            <remote-alias>部</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LZH_RCN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>组</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[组]</local-name>
+            <parent-name>[示例数据]</parent-name>
+            <remote-alias>组</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LZH_RCN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>班</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[班]</local-name>
+            <parent-name>[示例数据]</parent-name>
+            <remote-alias>班</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LZH_RCN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>日期</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[日期]</local-name>
+            <parent-name>[示例数据]</parent-name>
+            <remote-alias>日期</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>姓名</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[姓名]</local-name>
+            <parent-name>[示例数据]</parent-name>
+            <remote-alias>姓名</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LZH_RCN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>工号</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[工号]</local-name>
+            <parent-name>[示例数据]</parent-name>
+            <remote-alias>工号</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LZH_RCN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>人工服务接听量</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[人工服务接听量]</local-name>
+            <parent-name>[示例数据]</parent-name>
+            <remote-alias>人工服务接听量</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>三声铃响接听量</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[三声铃响接听量]</local-name>
+            <parent-name>[示例数据]</parent-name>
+            <remote-alias>三声铃响接听量</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>呼入通话时长(秒)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[呼入通话时长(秒)]</local-name>
+            <parent-name>[示例数据]</parent-name>
+            <remote-alias>呼入通话时长(秒)</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>平均呼入通话时长(秒)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[平均呼入通话时长(秒)]</local-name>
+            <parent-name>[示例数据]</parent-name>
+            <remote-alias>平均呼入通话时长(秒)</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>呼入案头总时长(秒)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[呼入案头总时长(秒)]</local-name>
+            <parent-name>[示例数据]</parent-name>
+            <remote-alias>呼入案头总时长(秒)</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>平均呼入案头时长（秒）</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[平均呼入案头时长（秒）]</local-name>
+            <parent-name>[示例数据]</parent-name>
+            <remote-alias>平均呼入案头时长（秒）</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>服务评价推送成功数</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[服务评价推送成功数]</local-name>
+            <parent-name>[示例数据]</parent-name>
+            <remote-alias>服务评价推送成功数</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>服务评价满意率</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[服务评价满意率]</local-name>
+            <parent-name>[示例数据]</parent-name>
+            <remote-alias>服务评价满意率</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[示例数据]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:O10001:no:A1:O10001:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='满意吗？【计算字段】' datatype='string' name='[Calculation_1027383715273515009]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF [服务评价满意率]&lt;0.95 THEN &apos;不满意&apos;&#13;&#10;ELSE &apos;满意&apos;&#13;&#10;END' />
+      </column>
+      <column caption='N天移动平均接听量' datatype='real' name='[Calculation_1155736304656191488]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='WINDOW_AVG(SUM([人工服务接听量]),-[Parameters].[参数 1],0)'>
+          <table-calc level-address='[federated.1nvoonx0qmnkn011ytm971bl4z2m].[dy:日期:ok]' ordering-field='[federated.1nvoonx0qmnkn011ytm971bl4z2m].[日期]' ordering-type='Field' />
+        </calculation>
+      </column>
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column datatype='date' name='[日期]' role='dimension' type='ordinal' />
+      <column datatype='string' name='[服务评价满意率 (分组)]' role='dimension' type='ordinal'>
+        <calculation class='categorical-bin' column='[服务评价满意率]' new-bin='true'>
+          <bin default-name='false' value='&quot;不满意&quot;'>
+            <value>0.0</value>
+            <value>0.46510000000000001</value>
+            <value>0.5</value>
+            <value>0.59999999999999998</value>
+            <value>0.66669999999999996</value>
+            <value>0.69999999999999996</value>
+            <value>0.71430000000000005</value>
+            <value>0.75</value>
+            <value>0.77780000000000005</value>
+            <value>0.78949999999999998</value>
+            <value>0.80000000000000004</value>
+            <value>0.8125</value>
+            <value>0.81820000000000004</value>
+            <value>0.82350000000000001</value>
+            <value>0.83330000000000004</value>
+            <value>0.83779999999999999</value>
+            <value>0.84209999999999996</value>
+            <value>0.84440000000000004</value>
+            <value>0.84619999999999995</value>
+            <value>0.84750000000000003</value>
+            <value>0.85709999999999997</value>
+            <value>0.86360000000000003</value>
+            <value>0.86670000000000003</value>
+            <value>0.86839999999999995</value>
+            <value>0.86960000000000004</value>
+            <value>0.87039999999999995</value>
+            <value>0.871</value>
+            <value>0.875</value>
+            <value>0.87880000000000003</value>
+            <value>0.88</value>
+            <value>0.88239999999999996</value>
+            <value>0.88460000000000005</value>
+            <value>0.88570000000000004</value>
+            <value>0.88680000000000003</value>
+            <value>0.88890000000000002</value>
+            <value>0.89190000000000003</value>
+            <value>0.89229999999999998</value>
+            <value>0.89290000000000003</value>
+            <value>0.89470000000000005</value>
+            <value>0.89580000000000004</value>
+            <value>0.89659999999999995</value>
+            <value>0.89829999999999999</value>
+            <value>0.90000000000000002</value>
+            <value>0.90159999999999996</value>
+            <value>0.90200000000000002</value>
+            <value>0.90239999999999998</value>
+            <value>0.9032</value>
+            <value>0.90480000000000005</value>
+            <value>0.90629999999999999</value>
+            <value>0.90700000000000003</value>
+            <value>0.90910000000000002</value>
+            <value>0.91180000000000005</value>
+            <value>0.91300000000000003</value>
+            <value>0.91379999999999995</value>
+            <value>0.9143</value>
+            <value>0.91490000000000005</value>
+            <value>0.9153</value>
+            <value>0.91669999999999996</value>
+            <value>0.91779999999999995</value>
+            <value>0.91839999999999999</value>
+            <value>0.91890000000000005</value>
+            <value>0.92000000000000004</value>
+            <value>0.92059999999999997</value>
+            <value>0.92110000000000003</value>
+            <value>0.92159999999999997</value>
+            <value>0.92220000000000002</value>
+            <value>0.92310000000000003</value>
+            <value>0.92420000000000002</value>
+            <value>0.92449999999999999</value>
+            <value>0.92469999999999997</value>
+            <value>0.92500000000000004</value>
+            <value>0.92589999999999995</value>
+            <value>0.92679999999999996</value>
+            <value>0.92730000000000001</value>
+            <value>0.92859999999999998</value>
+            <value>0.93020000000000003</value>
+            <value>0.93100000000000005</value>
+            <value>0.93149999999999999</value>
+            <value>0.93179999999999996</value>
+            <value>0.93220000000000003</value>
+            <value>0.93330000000000002</value>
+            <value>0.93440000000000001</value>
+            <value>0.93479999999999996</value>
+            <value>0.9355</value>
+            <value>0.93620000000000003</value>
+            <value>0.9365</value>
+            <value>0.9375</value>
+            <value>0.93879999999999997</value>
+            <value>0.93940000000000001</value>
+            <value>0.93999999999999995</value>
+            <value>0.94030000000000002</value>
+            <value>0.94120000000000004</value>
+            <value>0.94189999999999996</value>
+            <value>0.94230000000000003</value>
+            <value>0.94289999999999996</value>
+            <value>0.94340000000000002</value>
+            <value>0.94369999999999998</value>
+            <value>0.94379999999999997</value>
+            <value>0.94440000000000002</value>
+            <value>0.94510000000000005</value>
+            <value>0.94550000000000001</value>
+            <value>0.94589999999999996</value>
+            <value>0.94640000000000002</value>
+            <value>0.94669999999999999</value>
+            <value>0.94740000000000002</value>
+            <value>0.94810000000000005</value>
+            <value>0.94830000000000003</value>
+            <value>0.94869999999999999</value>
+            <value>0.94920000000000004</value>
+            <value>0.94950000000000001</value>
+          </bin>
+          <bin default-name='false' value='&quot;满意&quot;'>
+            <value>0.94999999999999996</value>
+            <value>0.9506</value>
+            <value>0.95079999999999998</value>
+            <value>0.95099999999999996</value>
+            <value>0.95120000000000005</value>
+            <value>0.9516</value>
+            <value>0.95179999999999998</value>
+            <value>0.95240000000000002</value>
+            <value>0.95309999999999995</value>
+            <value>0.95350000000000001</value>
+            <value>0.95379999999999998</value>
+            <value>0.95399999999999996</value>
+            <value>0.95450000000000002</value>
+            <value>0.95520000000000005</value>
+            <value>0.9556</value>
+            <value>0.95589999999999997</value>
+            <value>0.95599999999999996</value>
+            <value>0.95650000000000002</value>
+            <value>0.95709999999999995</value>
+            <value>0.95740000000000003</value>
+            <value>0.9577</value>
+            <value>0.95799999999999996</value>
+            <value>0.95830000000000004</value>
+            <value>0.95860000000000001</value>
+            <value>0.9587</value>
+            <value>0.95889999999999997</value>
+            <value>0.95920000000000005</value>
+            <value>0.95950000000000002</value>
+            <value>0.95999999999999996</value>
+            <value>0.96040000000000003</value>
+            <value>0.96050000000000002</value>
+            <value>0.96079999999999999</value>
+            <value>0.96099999999999997</value>
+            <value>0.96120000000000005</value>
+            <value>0.96150000000000002</value>
+            <value>0.96189999999999998</value>
+            <value>0.96199999999999997</value>
+            <value>0.96230000000000004</value>
+            <value>0.96250000000000002</value>
+            <value>0.96299999999999997</value>
+            <value>0.96340000000000003</value>
+            <value>0.96350000000000002</value>
+            <value>0.96360000000000001</value>
+            <value>0.96389999999999998</value>
+            <value>0.96430000000000005</value>
+            <value>0.96489999999999998</value>
+            <value>0.96519999999999995</value>
+            <value>0.96550000000000002</value>
+            <value>0.96579999999999999</value>
+            <value>0.96589999999999998</value>
+            <value>0.96609999999999996</value>
+            <value>0.96630000000000005</value>
+            <value>0.9667</value>
+            <value>0.96689999999999998</value>
+            <value>0.96699999999999997</value>
+            <value>0.96719999999999995</value>
+            <value>0.96740000000000004</value>
+            <value>0.9677</value>
+            <value>0.96809999999999996</value>
+            <value>0.96830000000000005</value>
+            <value>0.96840000000000004</value>
+            <value>0.96879999999999999</value>
+            <value>0.96919999999999995</value>
+            <value>0.96940000000000004</value>
+            <value>0.96950000000000003</value>
+            <value>0.96970000000000001</value>
+            <value>0.96999999999999997</value>
+            <value>0.97009999999999996</value>
+            <value>0.97060000000000002</value>
+            <value>0.97099999999999997</value>
+            <value>0.97119999999999995</value>
+            <value>0.97140000000000004</value>
+            <value>0.9718</value>
+            <value>0.97219999999999995</value>
+            <value>0.97250000000000003</value>
+            <value>0.97260000000000002</value>
+            <value>0.97299999999999998</value>
+            <value>0.97319999999999995</value>
+            <value>0.97330000000000005</value>
+            <value>0.97370000000000001</value>
+            <value>0.97389999999999999</value>
+            <value>0.97399999999999998</value>
+            <value>0.97440000000000004</value>
+            <value>0.97460000000000002</value>
+            <value>0.97470000000000001</value>
+            <value>0.97499999999999998</value>
+            <value>0.97529999999999994</value>
+            <value>0.97560000000000002</value>
+            <value>0.9758</value>
+            <value>0.97589999999999999</value>
+            <value>0.97619999999999996</value>
+            <value>0.97650000000000003</value>
+            <value>0.97660000000000002</value>
+            <value>0.97670000000000001</value>
+            <value>0.97689999999999999</value>
+            <value>0.97699999999999998</value>
+            <value>0.97709999999999997</value>
+            <value>0.97729999999999995</value>
+            <value>0.97750000000000004</value>
+            <value>0.97760000000000002</value>
+            <value>0.9778</value>
+            <value>0.97799999999999998</value>
+            <value>0.97829999999999995</value>
+            <value>0.97850000000000004</value>
+            <value>0.97870000000000001</value>
+            <value>0.97889999999999999</value>
+            <value>0.97919999999999996</value>
+            <value>0.97940000000000005</value>
+            <value>0.97960000000000003</value>
+            <value>0.9798</value>
+            <value>0.97999999999999998</value>
+            <value>0.98019999999999996</value>
+            <value>0.98040000000000005</value>
+            <value>0.98060000000000003</value>
+            <value>0.98080000000000001</value>
+            <value>0.98099999999999998</value>
+            <value>0.98109999999999997</value>
+            <value>0.98129999999999995</value>
+            <value>0.98150000000000004</value>
+            <value>0.98170000000000002</value>
+            <value>0.98180000000000001</value>
+            <value>0.98209999999999997</value>
+            <value>0.98229999999999995</value>
+            <value>0.98250000000000004</value>
+            <value>0.98260000000000003</value>
+            <value>0.98280000000000001</value>
+            <value>0.9829</value>
+            <value>0.98309999999999997</value>
+            <value>0.98319999999999996</value>
+            <value>0.98329999999999995</value>
+            <value>0.98350000000000004</value>
+            <value>0.98360000000000003</value>
+            <value>0.9839</value>
+            <value>0.98409999999999997</value>
+            <value>0.98440000000000005</value>
+            <value>0.98450000000000004</value>
+            <value>0.98460000000000003</value>
+            <value>0.98470000000000002</value>
+            <value>0.98480000000000001</value>
+            <value>0.98499999999999999</value>
+            <value>0.98509999999999998</value>
+            <value>0.98529999999999995</value>
+            <value>0.98550000000000004</value>
+            <value>0.98560000000000003</value>
+            <value>0.98570000000000002</value>
+            <value>0.9859</value>
+            <value>0.98609999999999998</value>
+            <value>0.98619999999999997</value>
+            <value>0.98629999999999995</value>
+            <value>0.98650000000000004</value>
+            <value>0.98660000000000003</value>
+            <value>0.98670000000000002</value>
+            <value>0.98680000000000001</value>
+            <value>0.98699999999999999</value>
+            <value>0.98719999999999997</value>
+            <value>0.98729999999999996</value>
+            <value>0.98750000000000004</value>
+            <value>0.98770000000000002</value>
+            <value>0.98780000000000001</value>
+            <value>0.98799999999999999</value>
+            <value>0.98809999999999998</value>
+            <value>0.98819999999999997</value>
+            <value>0.98839999999999995</value>
+            <value>0.98850000000000005</value>
+            <value>0.98860000000000003</value>
+            <value>0.98880000000000001</value>
+            <value>0.9889</value>
+            <value>0.98899999999999999</value>
+            <value>0.98909999999999998</value>
+            <value>0.98919999999999997</value>
+            <value>0.98939999999999995</value>
+            <value>0.98950000000000005</value>
+            <value>0.98960000000000004</value>
+            <value>0.98970000000000002</value>
+            <value>0.98980000000000001</value>
+            <value>0.9899</value>
+            <value>0.98999999999999999</value>
+            <value>0.99009999999999998</value>
+            <value>0.99019999999999997</value>
+            <value>0.99029999999999996</value>
+            <value>0.99039999999999995</value>
+            <value>0.99050000000000005</value>
+            <value>0.99060000000000004</value>
+            <value>0.99070000000000003</value>
+            <value>0.99080000000000001</value>
+            <value>0.9909</value>
+            <value>0.99099999999999999</value>
+            <value>0.99109999999999998</value>
+            <value>0.99119999999999997</value>
+            <value>0.99129999999999996</value>
+            <value>0.99139999999999995</value>
+            <value>0.99150000000000005</value>
+            <value>0.99160000000000004</value>
+            <value>0.99170000000000003</value>
+            <value>0.99180000000000001</value>
+            <value>0.9919</value>
+            <value>0.99199999999999999</value>
+            <value>0.99209999999999998</value>
+            <value>0.99219999999999997</value>
+            <value>0.99229999999999996</value>
+            <value>0.99239999999999995</value>
+            <value>0.99250000000000005</value>
+            <value>0.99260000000000004</value>
+            <value>0.99270000000000003</value>
+            <value>0.99280000000000002</value>
+            <value>0.9929</value>
+            <value>0.99299999999999999</value>
+            <value>0.99309999999999998</value>
+            <value>0.99319999999999997</value>
+            <value>0.99329999999999996</value>
+            <value>0.99339999999999995</value>
+            <value>0.99350000000000005</value>
+            <value>0.99360000000000004</value>
+            <value>0.99370000000000003</value>
+            <value>0.99380000000000002</value>
+            <value>0.99390000000000001</value>
+            <value>0.99409999999999998</value>
+            <value>0.99429999999999996</value>
+            <value>0.99480000000000002</value>
+            <value>0.99490000000000001</value>
+            <value>0.99509999999999998</value>
+            <value>0.99519999999999997</value>
+            <value>1.0</value>
+          </bin>
+        </calculation>
+      </column>
+      <column datatype='real' name='[服务评价满意率]' role='measure' type='quantitative' />
+      <column-instance column='[日期]' derivation='Day' name='[dy:日期:ok]' pivot='key' type='ordinal' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.458333' measure-ordering='alphabetic' measure-percentage='0.486111' parameter-percentage='0.0555556' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;China&quot;' />
+      </semantic-values>
+      <datasource-dependencies datasource='Parameters'>
+        <column caption='N 日移动平均参数' datatype='integer' name='[参数 1]' param-domain-type='range' role='measure' type='quantitative' value='5'>
+          <calculation class='tableau' formula='5' />
+          <range granularity='1' max='31' min='1' />
+        </column>
+      </datasource-dependencies>
+    </datasource>
+    <datasource hasconnection='false' inline='true' name='Parameters' version='18.1'>
+      <aliases enabled='yes' />
+      <column caption='N 日移动平均参数' datatype='integer' name='[参数 1]' param-domain-type='range' role='measure' type='quantitative' value='5'>
+        <calculation class='tableau' formula='5' />
+        <range granularity='1' max='31' min='1' />
+      </column>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='N日移动平均量和每天人工服务接听量'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='示例数据 (人工坐席接听数据)' name='federated.1nvoonx0qmnkn011ytm971bl4z2m' />
+            <datasource caption='参数' name='Parameters' />
+          </datasources>
+          <datasource-dependencies datasource='Parameters'>
+            <column caption='N 日移动平均参数' datatype='integer' name='[参数 1]' param-domain-type='range' role='measure' type='quantitative' value='5'>
+              <calculation class='tableau' formula='5' />
+              <range granularity='1' max='31' min='1' />
+            </column>
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.1nvoonx0qmnkn011ytm971bl4z2m'>
+            <column caption='N天移动平均接听量' datatype='real' name='[Calculation_1155736304656191488]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='WINDOW_AVG(SUM([人工服务接听量]),-[Parameters].[参数 1],0)'>
+                <table-calc level-address='[federated.1nvoonx0qmnkn011ytm971bl4z2m].[dy:日期:ok]' ordering-field='[federated.1nvoonx0qmnkn011ytm971bl4z2m].[日期]' ordering-type='Field' />
+              </calculation>
+            </column>
+            <column-instance column='[日期]' derivation='Day' name='[dy:日期:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[人工服务接听量]' derivation='Sum' name='[sum:人工服务接听量:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1155736304656191488]' derivation='User' name='[usr:Calculation_1155736304656191488:qk]' pivot='key' type='quantitative'>
+              <table-calc level-address='[federated.1nvoonx0qmnkn011ytm971bl4z2m].[dy:日期:ok]' ordering-field='[federated.1nvoonx0qmnkn011ytm971bl4z2m].[日期]' ordering-type='Field' />
+            </column-instance>
+            <column datatype='integer' name='[人工服务接听量]' role='measure' type='quantitative' />
+            <column datatype='date' name='[日期]' role='dimension' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1nvoonx0qmnkn011ytm971bl4z2m].[usr:Calculation_1155736304656191488:qk]' field-type='quantitative' fold='true' scope='rows' synchronized='true' type='space' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1nvoonx0qmnkn011ytm971bl4z2m].[:Measure Names]' />
+            </encodings>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1nvoonx0qmnkn011ytm971bl4z2m].[sum:人工服务接听量:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1nvoonx0qmnkn011ytm971bl4z2m].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#f1ce63' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1nvoonx0qmnkn011ytm971bl4z2m].[usr:Calculation_1155736304656191488:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1nvoonx0qmnkn011ytm971bl4z2m].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#d37295' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.1nvoonx0qmnkn011ytm971bl4z2m].[sum:人工服务接听量:qk] + [federated.1nvoonx0qmnkn011ytm971bl4z2m].[usr:Calculation_1155736304656191488:qk])</rows>
+        <cols>[federated.1nvoonx0qmnkn011ytm971bl4z2m].[dy:日期:ok]</cols>
+      </table>
+      <simple-id uuid='{7CC9961E-15A5-4A65-9344-A5E2A970B7AA}' />
+    </worksheet>
+    <worksheet name='服务评价满意率与人工服务接听量散点图'>
+      <layout-options>
+        <caption>
+          <formatted-text>
+            <run bold='true' fontname='微软雅黑'>方法一：创建计算字段</run>
+          </formatted-text>
+        </caption>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='示例数据 (人工坐席接听数据)' name='federated.1nvoonx0qmnkn011ytm971bl4z2m' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1nvoonx0qmnkn011ytm971bl4z2m'>
+            <column caption='满意吗？【计算字段】' datatype='string' name='[Calculation_1027383715273515009]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [服务评价满意率]&lt;0.95 THEN &apos;不满意&apos;&#13;&#10;ELSE &apos;满意&apos;&#13;&#10;END' />
+            </column>
+            <column-instance column='[Calculation_1027383715273515009]' derivation='None' name='[none:Calculation_1027383715273515009:nk]' pivot='key' type='nominal' />
+            <column-instance column='[人工服务接听量]' derivation='Sum' name='[sum:人工服务接听量:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[服务评价满意率]' derivation='Sum' name='[sum:服务评价满意率:qk]' pivot='key' type='quantitative' />
+            <column datatype='integer' name='[人工服务接听量]' role='measure' type='quantitative' />
+            <column datatype='real' name='[服务评价满意率]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='false' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1nvoonx0qmnkn011ytm971bl4z2m].[none:Calculation_1027383715273515009:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1nvoonx0qmnkn011ytm971bl4z2m].[sum:人工服务接听量:qk]</rows>
+        <cols>[federated.1nvoonx0qmnkn011ytm971bl4z2m].[sum:服务评价满意率:qk]</cols>
+      </table>
+      <simple-id uuid='{65B112D2-1EEA-4DE8-B9D0-A98259464D24}' />
+    </worksheet>
+    <worksheet name='服务评价满意率与人工服务接听量散点图 (2)'>
+      <layout-options>
+        <caption>
+          <formatted-text>
+            <run bold='true' fontname='微软雅黑'>方法一：创建分组</run>
+          </formatted-text>
+        </caption>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='示例数据 (人工坐席接听数据)' name='federated.1nvoonx0qmnkn011ytm971bl4z2m' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1nvoonx0qmnkn011ytm971bl4z2m'>
+            <column-instance column='[人工服务接听量]' derivation='Sum' name='[sum:人工服务接听量:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[服务评价满意率]' derivation='Sum' name='[sum:服务评价满意率:qk]' pivot='key' type='quantitative' />
+            <column datatype='integer' name='[人工服务接听量]' role='measure' type='quantitative' />
+            <column datatype='string' name='[服务评价满意率 (分组)]' role='dimension' type='ordinal'>
+              <calculation class='categorical-bin' column='[服务评价满意率]' new-bin='true'>
+                <bin default-name='false' value='&quot;不满意&quot;'>
+                  <value>0.0</value>
+                  <value>0.46510000000000001</value>
+                  <value>0.5</value>
+                  <value>0.59999999999999998</value>
+                  <value>0.66669999999999996</value>
+                  <value>0.69999999999999996</value>
+                  <value>0.71430000000000005</value>
+                  <value>0.75</value>
+                  <value>0.77780000000000005</value>
+                  <value>0.78949999999999998</value>
+                  <value>0.80000000000000004</value>
+                  <value>0.8125</value>
+                  <value>0.81820000000000004</value>
+                  <value>0.82350000000000001</value>
+                  <value>0.83330000000000004</value>
+                  <value>0.83779999999999999</value>
+                  <value>0.84209999999999996</value>
+                  <value>0.84440000000000004</value>
+                  <value>0.84619999999999995</value>
+                  <value>0.84750000000000003</value>
+                  <value>0.85709999999999997</value>
+                  <value>0.86360000000000003</value>
+                  <value>0.86670000000000003</value>
+                  <value>0.86839999999999995</value>
+                  <value>0.86960000000000004</value>
+                  <value>0.87039999999999995</value>
+                  <value>0.871</value>
+                  <value>0.875</value>
+                  <value>0.87880000000000003</value>
+                  <value>0.88</value>
+                  <value>0.88239999999999996</value>
+                  <value>0.88460000000000005</value>
+                  <value>0.88570000000000004</value>
+                  <value>0.88680000000000003</value>
+                  <value>0.88890000000000002</value>
+                  <value>0.89190000000000003</value>
+                  <value>0.89229999999999998</value>
+                  <value>0.89290000000000003</value>
+                  <value>0.89470000000000005</value>
+                  <value>0.89580000000000004</value>
+                  <value>0.89659999999999995</value>
+                  <value>0.89829999999999999</value>
+                  <value>0.90000000000000002</value>
+                  <value>0.90159999999999996</value>
+                  <value>0.90200000000000002</value>
+                  <value>0.90239999999999998</value>
+                  <value>0.9032</value>
+                  <value>0.90480000000000005</value>
+                  <value>0.90629999999999999</value>
+                  <value>0.90700000000000003</value>
+                  <value>0.90910000000000002</value>
+                  <value>0.91180000000000005</value>
+                  <value>0.91300000000000003</value>
+                  <value>0.91379999999999995</value>
+                  <value>0.9143</value>
+                  <value>0.91490000000000005</value>
+                  <value>0.9153</value>
+                  <value>0.91669999999999996</value>
+                  <value>0.91779999999999995</value>
+                  <value>0.91839999999999999</value>
+                  <value>0.91890000000000005</value>
+                  <value>0.92000000000000004</value>
+                  <value>0.92059999999999997</value>
+                  <value>0.92110000000000003</value>
+                  <value>0.92159999999999997</value>
+                  <value>0.92220000000000002</value>
+                  <value>0.92310000000000003</value>
+                  <value>0.92420000000000002</value>
+                  <value>0.92449999999999999</value>
+                  <value>0.92469999999999997</value>
+                  <value>0.92500000000000004</value>
+                  <value>0.92589999999999995</value>
+                  <value>0.92679999999999996</value>
+                  <value>0.92730000000000001</value>
+                  <value>0.92859999999999998</value>
+                  <value>0.93020000000000003</value>
+                  <value>0.93100000000000005</value>
+                  <value>0.93149999999999999</value>
+                  <value>0.93179999999999996</value>
+                  <value>0.93220000000000003</value>
+                  <value>0.93330000000000002</value>
+                  <value>0.93440000000000001</value>
+                  <value>0.93479999999999996</value>
+                  <value>0.9355</value>
+                  <value>0.93620000000000003</value>
+                  <value>0.9365</value>
+                  <value>0.9375</value>
+                  <value>0.93879999999999997</value>
+                  <value>0.93940000000000001</value>
+                  <value>0.93999999999999995</value>
+                  <value>0.94030000000000002</value>
+                  <value>0.94120000000000004</value>
+                  <value>0.94189999999999996</value>
+                  <value>0.94230000000000003</value>
+                  <value>0.94289999999999996</value>
+                  <value>0.94340000000000002</value>
+                  <value>0.94369999999999998</value>
+                  <value>0.94379999999999997</value>
+                  <value>0.94440000000000002</value>
+                  <value>0.94510000000000005</value>
+                  <value>0.94550000000000001</value>
+                  <value>0.94589999999999996</value>
+                  <value>0.94640000000000002</value>
+                  <value>0.94669999999999999</value>
+                  <value>0.94740000000000002</value>
+                  <value>0.94810000000000005</value>
+                  <value>0.94830000000000003</value>
+                  <value>0.94869999999999999</value>
+                  <value>0.94920000000000004</value>
+                  <value>0.94950000000000001</value>
+                </bin>
+                <bin default-name='false' value='&quot;满意&quot;'>
+                  <value>0.94999999999999996</value>
+                  <value>0.9506</value>
+                  <value>0.95079999999999998</value>
+                  <value>0.95099999999999996</value>
+                  <value>0.95120000000000005</value>
+                  <value>0.9516</value>
+                  <value>0.95179999999999998</value>
+                  <value>0.95240000000000002</value>
+                  <value>0.95309999999999995</value>
+                  <value>0.95350000000000001</value>
+                  <value>0.95379999999999998</value>
+                  <value>0.95399999999999996</value>
+                  <value>0.95450000000000002</value>
+                  <value>0.95520000000000005</value>
+                  <value>0.9556</value>
+                  <value>0.95589999999999997</value>
+                  <value>0.95599999999999996</value>
+                  <value>0.95650000000000002</value>
+                  <value>0.95709999999999995</value>
+                  <value>0.95740000000000003</value>
+                  <value>0.9577</value>
+                  <value>0.95799999999999996</value>
+                  <value>0.95830000000000004</value>
+                  <value>0.95860000000000001</value>
+                  <value>0.9587</value>
+                  <value>0.95889999999999997</value>
+                  <value>0.95920000000000005</value>
+                  <value>0.95950000000000002</value>
+                  <value>0.95999999999999996</value>
+                  <value>0.96040000000000003</value>
+                  <value>0.96050000000000002</value>
+                  <value>0.96079999999999999</value>
+                  <value>0.96099999999999997</value>
+                  <value>0.96120000000000005</value>
+                  <value>0.96150000000000002</value>
+                  <value>0.96189999999999998</value>
+                  <value>0.96199999999999997</value>
+                  <value>0.96230000000000004</value>
+                  <value>0.96250000000000002</value>
+                  <value>0.96299999999999997</value>
+                  <value>0.96340000000000003</value>
+                  <value>0.96350000000000002</value>
+                  <value>0.96360000000000001</value>
+                  <value>0.96389999999999998</value>
+                  <value>0.96430000000000005</value>
+                  <value>0.96489999999999998</value>
+                  <value>0.96519999999999995</value>
+                  <value>0.96550000000000002</value>
+                  <value>0.96579999999999999</value>
+                  <value>0.96589999999999998</value>
+                  <value>0.96609999999999996</value>
+                  <value>0.96630000000000005</value>
+                  <value>0.9667</value>
+                  <value>0.96689999999999998</value>
+                  <value>0.96699999999999997</value>
+                  <value>0.96719999999999995</value>
+                  <value>0.96740000000000004</value>
+                  <value>0.9677</value>
+                  <value>0.96809999999999996</value>
+                  <value>0.96830000000000005</value>
+                  <value>0.96840000000000004</value>
+                  <value>0.96879999999999999</value>
+                  <value>0.96919999999999995</value>
+                  <value>0.96940000000000004</value>
+                  <value>0.96950000000000003</value>
+                  <value>0.96970000000000001</value>
+                  <value>0.96999999999999997</value>
+                  <value>0.97009999999999996</value>
+                  <value>0.97060000000000002</value>
+                  <value>0.97099999999999997</value>
+                  <value>0.97119999999999995</value>
+                  <value>0.97140000000000004</value>
+                  <value>0.9718</value>
+                  <value>0.97219999999999995</value>
+                  <value>0.97250000000000003</value>
+                  <value>0.97260000000000002</value>
+                  <value>0.97299999999999998</value>
+                  <value>0.97319999999999995</value>
+                  <value>0.97330000000000005</value>
+                  <value>0.97370000000000001</value>
+                  <value>0.97389999999999999</value>
+                  <value>0.97399999999999998</value>
+                  <value>0.97440000000000004</value>
+                  <value>0.97460000000000002</value>
+                  <value>0.97470000000000001</value>
+                  <value>0.97499999999999998</value>
+                  <value>0.97529999999999994</value>
+                  <value>0.97560000000000002</value>
+                  <value>0.9758</value>
+                  <value>0.97589999999999999</value>
+                  <value>0.97619999999999996</value>
+                  <value>0.97650000000000003</value>
+                  <value>0.97660000000000002</value>
+                  <value>0.97670000000000001</value>
+                  <value>0.97689999999999999</value>
+                  <value>0.97699999999999998</value>
+                  <value>0.97709999999999997</value>
+                  <value>0.97729999999999995</value>
+                  <value>0.97750000000000004</value>
+                  <value>0.97760000000000002</value>
+                  <value>0.9778</value>
+                  <value>0.97799999999999998</value>
+                  <value>0.97829999999999995</value>
+                  <value>0.97850000000000004</value>
+                  <value>0.97870000000000001</value>
+                  <value>0.97889999999999999</value>
+                  <value>0.97919999999999996</value>
+                  <value>0.97940000000000005</value>
+                  <value>0.97960000000000003</value>
+                  <value>0.9798</value>
+                  <value>0.97999999999999998</value>
+                  <value>0.98019999999999996</value>
+                  <value>0.98040000000000005</value>
+                  <value>0.98060000000000003</value>
+                  <value>0.98080000000000001</value>
+                  <value>0.98099999999999998</value>
+                  <value>0.98109999999999997</value>
+                  <value>0.98129999999999995</value>
+                  <value>0.98150000000000004</value>
+                  <value>0.98170000000000002</value>
+                  <value>0.98180000000000001</value>
+                  <value>0.98209999999999997</value>
+                  <value>0.98229999999999995</value>
+                  <value>0.98250000000000004</value>
+                  <value>0.98260000000000003</value>
+                  <value>0.98280000000000001</value>
+                  <value>0.9829</value>
+                  <value>0.98309999999999997</value>
+                  <value>0.98319999999999996</value>
+                  <value>0.98329999999999995</value>
+                  <value>0.98350000000000004</value>
+                  <value>0.98360000000000003</value>
+                  <value>0.9839</value>
+                  <value>0.98409999999999997</value>
+                  <value>0.98440000000000005</value>
+                  <value>0.98450000000000004</value>
+                  <value>0.98460000000000003</value>
+                  <value>0.98470000000000002</value>
+                  <value>0.98480000000000001</value>
+                  <value>0.98499999999999999</value>
+                  <value>0.98509999999999998</value>
+                  <value>0.98529999999999995</value>
+                  <value>0.98550000000000004</value>
+                  <value>0.98560000000000003</value>
+                  <value>0.98570000000000002</value>
+                  <value>0.9859</value>
+                  <value>0.98609999999999998</value>
+                  <value>0.98619999999999997</value>
+                  <value>0.98629999999999995</value>
+                  <value>0.98650000000000004</value>
+                  <value>0.98660000000000003</value>
+                  <value>0.98670000000000002</value>
+                  <value>0.98680000000000001</value>
+                  <value>0.98699999999999999</value>
+                  <value>0.98719999999999997</value>
+                  <value>0.98729999999999996</value>
+                  <value>0.98750000000000004</value>
+                  <value>0.98770000000000002</value>
+                  <value>0.98780000000000001</value>
+                  <value>0.98799999999999999</value>
+                  <value>0.98809999999999998</value>
+                  <value>0.98819999999999997</value>
+                  <value>0.98839999999999995</value>
+                  <value>0.98850000000000005</value>
+                  <value>0.98860000000000003</value>
+                  <value>0.98880000000000001</value>
+                  <value>0.9889</value>
+                  <value>0.98899999999999999</value>
+                  <value>0.98909999999999998</value>
+                  <value>0.98919999999999997</value>
+                  <value>0.98939999999999995</value>
+                  <value>0.98950000000000005</value>
+                  <value>0.98960000000000004</value>
+                  <value>0.98970000000000002</value>
+                  <value>0.98980000000000001</value>
+                  <value>0.9899</value>
+                  <value>0.98999999999999999</value>
+                  <value>0.99009999999999998</value>
+                  <value>0.99019999999999997</value>
+                  <value>0.99029999999999996</value>
+                  <value>0.99039999999999995</value>
+                  <value>0.99050000000000005</value>
+                  <value>0.99060000000000004</value>
+                  <value>0.99070000000000003</value>
+                  <value>0.99080000000000001</value>
+                  <value>0.9909</value>
+                  <value>0.99099999999999999</value>
+                  <value>0.99109999999999998</value>
+                  <value>0.99119999999999997</value>
+                  <value>0.99129999999999996</value>
+                  <value>0.99139999999999995</value>
+                  <value>0.99150000000000005</value>
+                  <value>0.99160000000000004</value>
+                  <value>0.99170000000000003</value>
+                  <value>0.99180000000000001</value>
+                  <value>0.9919</value>
+                  <value>0.99199999999999999</value>
+                  <value>0.99209999999999998</value>
+                  <value>0.99219999999999997</value>
+                  <value>0.99229999999999996</value>
+                  <value>0.99239999999999995</value>
+                  <value>0.99250000000000005</value>
+                  <value>0.99260000000000004</value>
+                  <value>0.99270000000000003</value>
+                  <value>0.99280000000000002</value>
+                  <value>0.9929</value>
+                  <value>0.99299999999999999</value>
+                  <value>0.99309999999999998</value>
+                  <value>0.99319999999999997</value>
+                  <value>0.99329999999999996</value>
+                  <value>0.99339999999999995</value>
+                  <value>0.99350000000000005</value>
+                  <value>0.99360000000000004</value>
+                  <value>0.99370000000000003</value>
+                  <value>0.99380000000000002</value>
+                  <value>0.99390000000000001</value>
+                  <value>0.99409999999999998</value>
+                  <value>0.99429999999999996</value>
+                  <value>0.99480000000000002</value>
+                  <value>0.99490000000000001</value>
+                  <value>0.99509999999999998</value>
+                  <value>0.99519999999999997</value>
+                  <value>1.0</value>
+                </bin>
+              </calculation>
+            </column>
+            <column datatype='real' name='[服务评价满意率]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='false' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1nvoonx0qmnkn011ytm971bl4z2m].[服务评价满意率 (分组)]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1nvoonx0qmnkn011ytm971bl4z2m].[sum:人工服务接听量:qk]</rows>
+        <cols>[federated.1nvoonx0qmnkn011ytm971bl4z2m].[sum:服务评价满意率:qk]</cols>
+      </table>
+      <simple-id uuid='{8089783E-0C2D-4B22-B79C-388C7D914A32}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' name='服务评价满意率与人工服务接听量散点图'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1nvoonx0qmnkn011ytm971bl4z2m].[none:Calculation_1027383715273515009:nk]' type='color' />
+          </strip>
+        </edge>
+        <edge name='bottom'>
+          <strip size='2147483647'>
+            <card type='caption' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.1nvoonx0qmnkn011ytm971bl4z2m].[none:Calculation_1027383715273515009:nk]</field>
+          </color-one-way>
+        </highlight>
+        <default-map-tool-selection tool='2' />
+      </viewpoint>
+      <simple-id uuid='{7EA4541C-D043-49B0-A0A2-2A19ECB8D009}' />
+    </window>
+    <window class='worksheet' name='服务评价满意率与人工服务接听量散点图 (2)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='bottom'>
+          <strip size='36'>
+            <card type='caption' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1nvoonx0qmnkn011ytm971bl4z2m].[服务评价满意率 (分组)]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.1nvoonx0qmnkn011ytm971bl4z2m].[none:Calculation_1027383715273515009:nk]</field>
+            <field>[federated.1nvoonx0qmnkn011ytm971bl4z2m].[服务评价满意率 (分组)]</field>
+          </color-one-way>
+        </highlight>
+        <default-map-tool-selection tool='2' />
+      </viewpoint>
+      <simple-id uuid='{50EBC9CA-DDBA-4E06-BDC1-1BBEAFAD390B}' />
+    </window>
+    <window class='worksheet' maximized='true' name='N日移动平均量和每天人工服务接听量'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='slider' param='[Parameters].[参数 1]' type='parameter' />
+            <card pane-specification-id='1' param='[federated.1nvoonx0qmnkn011ytm971bl4z2m].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.1nvoonx0qmnkn011ytm971bl4z2m].[yr:日期:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{7C0D948D-4CD7-46FD-8BD2-139FC8F7E427}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='N日移动平均量和每天人工服务接听量' width='192'>
+      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
+      SUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='服务评价满意率与人工服务接听量散点图' width='192'>
+      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
+      /wPyb2hZCNQrWwAAAABJRU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='192' name='服务评价满意率与人工服务接听量散点图 (2)' width='192'>
+      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
+      zkYOgSQ7mv8P+ktexN/8VIUAAAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
